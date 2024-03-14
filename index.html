@@ -10,10 +10,16 @@
     <h1 id="title">Survey Form</h1>
     <p id="description">Thank you for taking the time to fill out the form</p>
     <form id="survey-form">
-        <fieldset>
+        <div class="form-group">
             <label for="name-label" id="name-label">Name<input type="text" id="name-label" name="name" placeholder="Enter your Name" required/></label>
+        </div>            
+        <div class="form-group">
             <label for="email-label" id="email-label">Email<input type="email" id="email-label" name="email" placeholder="Enter your Email" pattern=".+@example\.com" size="30" required/></label>
+        </div>
+        <div class="form-group">
             <label for="number-label" id="number-label">Input your age (years): <input id="number-label" type="number" name="age" pattern="[0-9]+" min="13" max="100"/></label>
+        </div>
+        <div class="form-group">
             <label for="dropdown">Which option best describes your current role?
                 <select id="dropdown" name="current-role">
                     <option value="">Select your current role</option>
@@ -24,9 +30,7 @@
                     <option value="5">Other</option>
                 </select>
             </label>
-        </fieldset>
-        <fieldset></fieldset>
-        <fieldset></fieldset>
+        </div>
     </form>
 </body>
 </html>
