@@ -11,9 +11,19 @@
     <p id="description">Thank you for taking the time to fill out the form</p>
     <form id="survey-form">
         <fieldset>
-            <label id="name-label">Name<input type="text" id="name" placeholder="Enter your Name" required/></label>
-            <label id="email-label">Email<input type="email" id="email" placeholder="Enter your Email" pattern=".+@example\.com" size="30" required/></label>
-            <label id="number-label">Input your age (years): <input id="age" type="number" name="age" pattern="[0-9]+" min="13" max="100"/></label>
+            <label for="name-label" id="name-label">Name<input type="text" id="name-label" name="name" placeholder="Enter your Name" required/></label>
+            <label for="email-label" id="email-label">Email<input type="email" id="email-label" name="email" placeholder="Enter your Email" pattern=".+@example\.com" size="30" required/></label>
+            <label for="number-label" id="number-label">Input your age (years): <input id="number-label" type="number" name="age" pattern="[0-9]+" min="13" max="100"/></label>
+            <label for="current-role">Which option best describes your current role?
+                <select id="current-role" name="current-role">
+                    <option value="">Select your current role</option>
+                    <option value="1">student</option>
+                    <option value="2">Full time job</option>
+                    <option value="3">Full time learner</option>
+                    <option value="4">Prefer not to say</option>
+                    <option value="5">Other</option>
+                </select>
+            </label>
         </fieldset>
         <fieldset></fieldset>
         <fieldset></fieldset>
